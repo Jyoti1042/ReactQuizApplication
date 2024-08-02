@@ -5,7 +5,7 @@ const Header = () => {
     <div className="flex flex-col items-center font-serif font-semibold bg-white">
       <Link //For navigation
         to="/"
-        className=" cursor-pointer text-[2vw] uppercase font-semibold "
+        className=" cursor-pointer text-[5vw] lg:text-[2vw]  uppercase font-semibold "
       >
         Online Quiz Platform
       </Link>
