@@ -97,7 +97,7 @@ const Home = ({ name, setName, fetchQuestions }) => {
       </div>
       <img
         src={quizImg}
-        className="banner p-[8px] w-[40%] self-center"
+        className="banner p-[8px] w-[75%] lg:w-[40%]  self-center"
         alt="quiz-Image"
       />
     </div>
