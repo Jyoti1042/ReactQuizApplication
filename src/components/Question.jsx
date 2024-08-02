@@ -75,7 +75,7 @@ const Question = ({
     <div className="w-full flex flex-col  items-center">
       <h1>Question {currQues + 1} :</h1>
 
-      <div className="w-full min-h-[350px] flex flex-col items-center justify-around  p-[20px] mt-[30px]">
+      <div className="w-full min-h-[350px] flex flex-col items-center justify-around text-center p-[20px] mt-[10px]">
         <h2 className="text-red-900 font-extrabold">
           {questions[currQues].question}
         </h2>
@@ -95,12 +95,13 @@ const Question = ({
               </button>
             ))}
         </div>
-        <div className="flex w-full gap-1 lg:justify-around">
+        <div className="flex w-full justify-between whitespace-nowrap gap-1 lg:justify-around">
           <Button
             style={{
               width: 180,
               backgroundColor: "red", // Set background color to red
-              color: "white", // Set text color to white
+              color: "white", 
+               // Set text color to white
             }}
             variant="contained"
             size="large"

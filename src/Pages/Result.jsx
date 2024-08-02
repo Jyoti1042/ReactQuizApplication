@@ -51,10 +51,10 @@ const Result = ({ name, score, correctAnswers, wrongAnswers }) => {
         className: "backdrop-blur-sm bg-black/60", // Black blur background
       }}
     >
-      <DialogTitle className="text-center font-extrabold font-serif">
+      <div className="text-center underline  font-extrabold font-serif">
         Result Analysis
-      </DialogTitle>
-      <DialogContent className="flex flex-col h-[60vh] justify-center text-center font-serif font-bold">
+      </div>
+      <DialogContent className="flex overflow-x-hidden flex-col h-[60vh] justify-center text-center font-serif font-bold">
         <div className="flex flex-wrap justify-around items-center w-full">
           <div className="flex-col space-y-3 flex justify-center items-center">
             <span className="text-[12px] lg:text-[18px] mt-4">Name: {name}</span>
@@ -64,13 +64,13 @@ const Result = ({ name, score, correctAnswers, wrongAnswers }) => {
             <span className="text-[12px] lg:text-[18px] mt-2">
               Total Wrong Answers: {wrongAnswers}
             </span>
-            <span className="underline text-[12px] lg:text-[18px]">
+            <span className="text-[12px] lg:text-[18px]">
               Final Score : {score}/{correctAnswers + wrongAnswers} Marks
             </span>
           </div>
 
           {/* Pie Chart */}
-          <div className="w-[300px] mt-3">
+          <div className="w-[250px] lg:w-[300px] mt-3">
             <Pie data={pieData} />
           </div>
         </div>
